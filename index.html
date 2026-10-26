@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Country Explorer</h1>
+    <p class="subtitle">Search any country and see its capital, population and flag.</p>
+
+    <form id="country-form" novalidate>
+      <label for="country-input">Country name</label>
+      <div class="row">
+        <input id="country-input" name="country" type="text"
+               placeholder="e.g. Colombia" required minlength="3" autocomplete="off">
+        <button id="search-btn" type="submit" disabled>Search</button>
+      </div>
+      <p id="feedback"></p>
+    </form>
+
+    <p id="status" role="status"></p>
+    <div id="card" hidden></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
